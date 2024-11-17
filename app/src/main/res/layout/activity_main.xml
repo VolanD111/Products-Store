@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+
+    </data>
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GoodS Store"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/NaborCB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CB0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Яблоки"/>
+            <CheckBox
+                android:id="@+id/CB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сгущенка"/>
+            <CheckBox
+                android:id="@+id/CB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пельмени"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/NaborCB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox
+                android:id="@+id/CB3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сок"/>
+            <CheckBox
+                android:id="@+id/CB4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мороженое"/>
+            <CheckBox
+                android:id="@+id/CB5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вода"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/NaborRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Курьер"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Самовывоз"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дрон(не военный)"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Введите здесь кол-во чаевых(деревянных)"/>
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Бахилы, чтобы ноги не марать?"/>
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Заказать"/>
+
+</LinearLayout>
+</layout>
